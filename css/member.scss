@@ -1,0 +1,212 @@
+@import "./mixin.scss";
+
+* {
+    box-sizing: border-box;
+
+    &:after {
+        box-sizing: border-box;
+    }
+
+    &:before {
+        box-sizing: border-box;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    .pc, .pcmenu {
+        display: none!important;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    // form
+
+    section {
+        width: 90%;
+        margin: 60px auto !important;
+
+        fieldset {
+            width: 100%;
+            margin: 0 auto;
+
+            h2 {
+                margin: 40px 0 10px;
+            }
+
+            .join_table {
+                width: 100%;
+
+                input {
+                    display: inline-block;
+                }
+
+                button {
+                    font-size: 0.7rem;
+                    padding: 0px 5px;
+                    background: #101010;
+                    color: #fff;
+                    text-align: center;
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    display: block;
+                    letter-spacing: -0.1em;
+                }
+
+                td {
+                    font-size: 15px;
+                    padding: 5px 0;
+
+                    input {
+                        font-size: 13px;
+                        padding: 10px;
+                    }
+
+                    &:nth-child(1) {
+                        width: 30%;
+                    }
+
+                    &:nth-child(2) {
+                        width: 48%;
+                        padding: 5px 6px;
+                    }
+
+                    &:nth-child(3) {
+                        width: 22%;
+                    }
+
+                }
+
+                .dobulecheck{
+                    cursor: pointer;
+                }
+
+            }
+
+            .submit {
+                margin: 20px auto;
+
+
+                a {
+                    color: #fff;
+                    display: inline-block;
+                    width: 45%;
+                    height: 45px;
+                    text-align: center;
+                    line-height: 45px;
+                    margin: 5px;
+                    background: #101010;
+                    color: #fff;
+                    border: none;
+                    outline: none;
+
+                }
+
+            }
+
+            .mc3 {
+                margin-bottom: 30px;
+
+                label {
+                    span {
+                        border-bottom: 1px solid #333;
+                        padding: 0 5px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    footer {
+        width: 100%;
+        height: 260px;
+        background: #252525;
+        position: relative;
+        font-family: 'pretendard-ExtraLight';
+
+        .content {
+            width: 90%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 0.8rem;
+            color: #fff;
+
+            ul {
+                margin: 20px 0;
+
+                &:nth-child(1) {
+                    display: flex;
+                    margin: 0 auto;
+                    justify-content: center;
+
+                    li {
+                        font-size: 0.8rem;
+                        padding: 0 4px;
+                    }
+                }
+
+                &:nth-child(2) {
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+
+                &:nth-child(3) {
+                    font-size: 0.8rem;
+                    line-height: 22px;
+                }
+
+            }
+
+        }
+    }
+
+    //pc------------------------------------------------------------------------
+
+
+    @include  tablet {
+        section {
+            width: 70%;
+            margin: 0 auto;
+
+            .mc3 {
+                label {
+                    font-size: 0.9rem;
+                }
+            }
+
+        }
+    }
+
+    @include  desktop {
+
+        
+        .pc, .pcmenu{display: block!important;}
+
+        
+        section {
+            width: 30%;
+            margin: 0 auto;
+
+            .dobulecheck{
+                cursor: pointer;
+            }
+
+            .mc3 {
+                label {
+                    font-size: 0.9rem;
+                }
+            }
+    }
+}
+}

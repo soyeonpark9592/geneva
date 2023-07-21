@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GENEVA:Change Your Mood by GENEVA Sound</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/member.css">
+
+        <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+      
+      
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="js/main.js"></script>
+      </head>
+
+<style>
+
+section{visibility: visible!important;}
+</style>
+
+<body>
+
+   
+  <header>
+    <div class="main">
+      <ul class="logo"><a href="main.html"><img src="img/logo.png" alt="logo"></a></ul>
+
+      <div class="pcmenu pc">
+        <ul class="pcmenutext">
+
+          <li><a href="#">Decon</a>
+            <ul class="pcsub">
+              <li><a href="#">Decon S</a></li>
+              <li><a href="#">Decon M</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">Model</a>
+            <ul class="pcsub">
+              <li><a href="#">Model S</a></li>
+              <li><a href="#">Model M</a></li>
+              <li><a href="#">Model L</a></li>
+              <li><a href="#">Model XL</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">Touring</a>
+            <ul class="pcsub">
+              <li><a href="#">Touring XS</a></li>
+              <li><a href="#">Touring S+</a></li>
+              <li><a href="#">Touring M</a></li>
+              <li><a href="#">Touring XL</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">Board</a></li>
+
+
+
+        </ul>
+
+      </div>
+
+      <ul class="icon">
+        <li class="form">
+          <form action="form_search" action="" method="get">
+            <input type="text" id="input" class="input" placeholder="search items..." />
+
+            <span id="trigger" class="submit"><img src="img/search.png" alt="search"></span>
+          </form>
+        </li>
+
+        <li class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </li>
+
+        <li class="mem pc"><img src="img/mem.png" alt="mem"></li>
+
+
+      </ul>
+
+
+
+    </div>
+  </header>
+
+  <!-- 메뉴 -->
+  <div class="menu">
+    <ul class="menutext">
+      <div class="php">
+        <span class="login"><a href="#">Login</a></span>
+        <span class="member"><a href="#">Sign up</a></span>
+      </div>
+
+      <li class="board"><a href="#">Board</a></li>
+      <li><a href="#">Decon Series<button></button></a>
+        <ul class="sub">
+          <li><a href="#">Decon S</a></li>
+          <li><a href="#">Decon M</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">Model Series<button></button></a>
+        <ul class="sub">
+          <li><a href="#">Model S</a></li>
+          <li><a href="#">Model M</a></li>
+          <li><a href="#">Model L</a></li>
+          <li><a href="#">Model XL</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">Touring Series<button></button></a>
+        <ul class="sub">
+          <li><a href="#">Touring XS</a></li>
+          <li><a href="#">Touring S+</a></li>
+          <li><a href="#">Touring M</a></li>
+          <li><a href="#">Touring XL</a></li>
+        </ul>
+      </li>
+
+
+    </ul>
+
+  </div>
+
+  <section>
+    <fieldset>
+       <div>
+        <h2>회원가입</h2>
+        <table class="join_table">
+            <tr>
+                <td>
+                    <label for="id">아이디 (6자 이상)</label>
+                </td>
+                <td>
+                    <input type="text" id="id" required placeholder="아이디를 입력해주세요.">
+                </td>
+                <td>
+                    <button>중복확인</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pwd1">비밀번호</label>
+                </td>
+                <td>
+                    <input type="password" id="pwd1" required placeholder="비밀번호를 입력해주세요.">
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><label for="pwd2">비밀번호 (확인)</label></td>
+                <td><input type="password" id="pwd2" required placeholder="한번 더 입력해주세요."></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><label for="name">이름</label></td>
+                <td><input type="text" id="name" required placeholder="이름을 입력해주세요."></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><label for="email">이메일주소</label></td>
+                <td><input type="text" id="email" required placeholder="예:onulhoi@onul.com"></td>
+            </tr>
+            <tr>
+                <td><label for="phone">휴대폰</label></td>
+                <td><input type="number" id="phone" required placeholder="숫자만 입력해주세요."></td>
+            </tr>
+        </table>
+
+       
+
+
+
+       <div>
+        <h2>약관 전체동의</h2>
+        <ul class="mc3">
+            <li>
+                <input type="checkbox" value="agree" name="chk1" id="agree01" required>
+                <label for="agree01">모두 동의합니다.</label>
+            </li>
+            <li>
+                <input type="checkbox" value="agree" name="chk1" id="agree02" required>
+                <label for="agree02">이용약관 필수 동의 <span>자세히보기</span></label>
+            </li>
+            <li>
+                <input type="checkbox" value="agree" name="chk1" id="agree03" required>
+                <label for="agree03">개인정보처리방침 필수 동의 <span>자세히보기</span></label>
+                
+            </li>
+        </ul>
+        </div>
+
+        
+        <div class="submit">
+          <a href="">돌아가기</a>
+          <a href="">가입하기</a>
+        </div>
+
+       </div>
+    </fieldset>
+ </section>
+
+<footer>
+    <div class="content">
+      <ul class="contenttop">
+        <li>회사소개 |</li>
+        <li>이용약관 |</li>
+        <li>개인정보 |</li>
+        <li>협찬/제휴 |</li>
+        <li>고객센터</li>
+      </ul>
+
+      <ul>구매 문의:02-549-0717<br>
+        A/S문의: 02-2234-8804
+      </ul>
+
+      <ul>
+        수입원 및 A/S: 극동음향(주)<br>
+        공식판매처: 사운드코어<br>
+        주소: 서울시 강남구 논현로 735 태양빌딩 3F<br>
+      </ul>
+
+    </div>
+
+  </footer>
+
+
+
+</body>
+</html>

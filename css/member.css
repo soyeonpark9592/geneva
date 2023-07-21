@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+*:after {
+  box-sizing: border-box;
+}
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+body .pc, body .pcmenu {
+  display: none !important;
+}
+body a {
+  text-decoration: none;
+}
+body section {
+  width: 90%;
+  margin: 60px auto !important;
+}
+body section fieldset {
+  width: 100%;
+  margin: 0 auto;
+}
+body section fieldset h2 {
+  margin: 40px 0 10px;
+}
+body section fieldset .join_table {
+  width: 100%;
+}
+body section fieldset .join_table input {
+  display: inline-block;
+}
+body section fieldset .join_table button {
+  font-size: 0.7rem;
+  padding: 0px 5px;
+  background: #101010;
+  color: #fff;
+  text-align: center;
+  border: none;
+  outline: none;
+  width: 100%;
+  display: block;
+  letter-spacing: -0.1em;
+}
+body section fieldset .join_table td {
+  font-size: 15px;
+  padding: 5px 0;
+}
+body section fieldset .join_table td input {
+  font-size: 13px;
+  padding: 10px;
+}
+body section fieldset .join_table td:nth-child(1) {
+  width: 30%;
+}
+body section fieldset .join_table td:nth-child(2) {
+  width: 48%;
+  padding: 5px 6px;
+}
+body section fieldset .join_table td:nth-child(3) {
+  width: 22%;
+}
+body section fieldset .join_table .dobulecheck {
+  cursor: pointer;
+}
+body section fieldset .submit {
+  margin: 20px auto;
+}
+body section fieldset .submit a {
+  color: #fff;
+  display: inline-block;
+  width: 45%;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  margin: 5px;
+  background: #101010;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+body section fieldset .mc3 {
+  margin-bottom: 30px;
+}
+body section fieldset .mc3 label span {
+  border-bottom: 1px solid #333;
+  padding: 0 5px;
+}
+body footer {
+  width: 100%;
+  height: 260px;
+  background: #252525;
+  position: relative;
+  font-family: "pretendard-ExtraLight";
+}
+body footer .content {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 0.8rem;
+  color: #fff;
+}
+body footer .content ul {
+  margin: 20px 0;
+}
+body footer .content ul:nth-child(1) {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+body footer .content ul:nth-child(1) li {
+  font-size: 0.8rem;
+  padding: 0 4px;
+}
+body footer .content ul:nth-child(2) {
+  font-size: 1rem;
+  font-weight: 600;
+}
+body footer .content ul:nth-child(3) {
+  font-size: 0.8rem;
+  line-height: 22px;
+}
+@media (min-width: 481px) and (max-width: 850px) {
+  body section {
+    width: 70%;
+    margin: 0 auto;
+  }
+  body section .mc3 label {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 851px) {
+  body .pc, body .pcmenu {
+    display: block !important;
+  }
+  body section {
+    width: 30%;
+    margin: 0 auto;
+  }
+  body section .dobulecheck {
+    cursor: pointer;
+  }
+  body section .mc3 label {
+    font-size: 0.9rem;
+  }
+}

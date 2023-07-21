@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+*:after {
+  box-sizing: border-box;
+}
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+body section {
+  margin: 150px auto;
+  width: 100%;
+}
+body section .login {
+  width: 100%;
+  margin: 100px auto;
+  position: relative;
+}
+body section .login #box {
+  width: 90%;
+  margin: 0 auto;
+}
+body section .login #box h2 {
+  color: #333;
+  font-size: 1.4rem;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+body section .login #box form {
+  text-align: center;
+  line-height: 50px;
+}
+body section .login #box form ul {
+  padding: 5px 0;
+  margin: -3px 0;
+}
+body section .login #box form ul#id input {
+  padding: 10px 40px;
+  transform: translateY(1px);
+}
+body section .login #box form ul#id3 li {
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 0.85rem;
+}
+body section .login #box form ul#id3 li a {
+  text-decoration: none;
+  color: #101010;
+}
+body section .login #box form ul#id3 li:last-child {
+  margin-left: -20px;
+}
+body section .login #box form #button input, body section .login #box form #button a {
+  display: inline-block;
+  width: 250px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  margin: 5px 0;
+  background: #101010;
+  color: #fff;
+  border: none;
+  outline: none;
+}
